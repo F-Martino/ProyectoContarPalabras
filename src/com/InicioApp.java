@@ -10,7 +10,7 @@ public class InicioApp {
 	
 	public int contarNumeroPalabras(String cadena) {
 		this.palabras = cadena.split(" ");
-		
+		int w = 0;
 		return this.palabras.length;
 	}
 	
