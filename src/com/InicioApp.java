@@ -1,19 +1,13 @@
 package com;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
 public class InicioApp {
-	private String [] palabras;
-	private ArrayList<Character> listaCaracteres = new ArrayList<Character>();
 	
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 		Contador cont = new Contador();
 		Printer impr = new Printer();
-		
-		
 		
 		System.out.println("INTRODUZCA UNA CADENA DE CARACTERES:");
 		String texto = teclado.nextLine();
