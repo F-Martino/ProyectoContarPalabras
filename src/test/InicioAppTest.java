@@ -11,6 +11,16 @@ import org.junit.jupiter.api.Test;
 
 class InicioAppTest {
 	
+	Contador c1 = new Contador();
+	Contador c2 = new Contador();
+	Contador c3 = new Contador();
+	Contador c4 = new Contador();
+	
+	Printer p1 = new Printer();
+	Printer p2 = new Printer();
+	Printer p3 = new Printer();
+	Printer p4 = new Printer();
+	
 	InicioApp ejemplo1 = new InicioApp();
 	InicioApp ejemplo2 = new InicioApp();
 	InicioApp ejemplo3 = new InicioApp();
@@ -21,35 +31,34 @@ class InicioAppTest {
 	String texto3 = "El archiduque de noruega juega al golf los domingos por la mañana";
 	String texto4 = "AaAa Bbbb CCCCC ññññ";
 	
-	int numPalabras1 = ejemplo1.contarNumeroPalabras(texto1);
-	int numPalabras2 = ejemplo2.contarNumeroPalabras(texto2);
-	int numPalabras3 = ejemplo3.contarNumeroPalabras(texto3);
-	int numPalabras4 = ejemplo4.contarNumeroPalabras(texto4);
+	int numPalabras1 = c1.contarNumeroPalabras(texto1);
+	int numPalabras2 = c2.contarNumeroPalabras(texto2);
+	int numPalabras3 = c3.contarNumeroPalabras(texto3);
+	int numPalabras4 = c4.contarNumeroPalabras(texto4);
 	
-	int numCaracteres1 = ejemplo1.contarCaracteresTotal(texto1);
-	int numCaracteres2 = ejemplo2.contarCaracteresTotal(texto2);
-	int numCaracteres3 = ejemplo3.contarCaracteresTotal(texto3);
-	int numCaracteres4 = ejemplo4.contarCaracteresTotal(texto4);
+	int numCaracteres1 = c1.contarCaracteresTotal(texto1);
+	int numCaracteres2 = c2.contarCaracteresTotal(texto2);
+	int numCaracteres3 = c3.contarCaracteresTotal(texto3);
+	int numCaracteres4 = c4.contarCaracteresTotal(texto4);
 	
-	Map<Character, Integer> listaCaracteres1 = ejemplo1.contarTodosCaracteres(texto1);
-	Map<Character, Integer> listaCaracteres2 = ejemplo2.contarTodosCaracteres(texto2);
-	Map<Character, Integer> listaCaracteres3 = ejemplo3.contarTodosCaracteres(texto3);
-	Map<Character, Integer> listaCaracteres4 = ejemplo4.contarTodosCaracteres(texto4);
+	Map<Character, Integer> listaCaracteres1 = c1.contarTodosCaracteres(texto1);
+	Map<Character, Integer> listaCaracteres2 = c2.contarTodosCaracteres(texto2);
+	Map<Character, Integer> listaCaracteres3 = c3.contarTodosCaracteres(texto3);
+	Map<Character, Integer> listaCaracteres4 = c4.contarTodosCaracteres(texto4);
 	
-	String textoPalabra1 = ejemplo1.textoNumeroPalabras(numPalabras1);
-	String textoPalabra2 = ejemplo2.textoNumeroPalabras(numPalabras2);
-	String textoPalabra3 = ejemplo3.textoNumeroPalabras(numPalabras3);
-	String textoPalabra4 = ejemplo4.textoNumeroPalabras(numPalabras4);
 	
-	String textoCaracteres1 = ejemplo1.textoCaracteresTotal(numCaracteres1);
-	String textoCaracteres2 = ejemplo2.textoCaracteresTotal(numCaracteres2);
-	String textoCaracteres3 = ejemplo3.textoCaracteresTotal(numCaracteres3);
-	String textoCaracteres4 = ejemplo4.textoCaracteresTotal(numCaracteres4);
+	String textoPalabra1 = p1.textoNumeroPalabras(numPalabras1);
+	String textoPalabra2 = p2.textoNumeroPalabras(numPalabras2);
+	String textoPalabra3 = p3.textoNumeroPalabras(numPalabras3);
+	String textoPalabra4 = p4.textoNumeroPalabras(numPalabras4);
 	
-	String textoListaCaracteres1 = ejemplo1.textoTodosCaracteres(listaCaracteres1);
-	String textoListaCaracteres2 = ejemplo2.textoTodosCaracteres(listaCaracteres2);
-	String textoListaCaracteres3 = ejemplo3.textoTodosCaracteres(listaCaracteres3);
-	String textoListaCaracteres4 = ejemplo4.textoTodosCaracteres(listaCaracteres4);
+	String textoCaracteres1 = p1.textoCaracteresTotal(numCaracteres1);
+	String textoCaracteres2 = p2.textoCaracteresTotal(numCaracteres2);
+	String textoCaracteres3 = p3.textoCaracteresTotal(numCaracteres3);
+	String textoCaracteres4 = p4.textoCaracteresTotal(numCaracteres4);
+	
+	
+	
 
 	@Nested
 	/**
@@ -236,7 +245,9 @@ class InicioAppTest {
 		
 		
 		@Test
-		void testTextoNumeroPalabras1() {	
+		void testTextoNumeroPalabras1() {
+			p1.setListaCaracteres(c1.getListaCaracteres());
+			String textoListaCaracteres1 = p1.textoTodosCaracteres(listaCaracteres1);
 			String texto = "\nEl caracter M se repite 1 veces." + 
 					"\nEl caracter e se repite 2 veces." +
 					"\nEl caracter g se repite 1 veces." +
@@ -254,7 +265,9 @@ class InicioAppTest {
 		}
 		
 		@Test
-		void testTextoNumeroPalabras2() {	
+		void testTextoNumeroPalabras2() {
+			p2.setListaCaracteres(c2.getListaCaracteres());
+			String textoListaCaracteres2 = p2.textoTodosCaracteres(listaCaracteres2);
 			String texto = "\nEl caracter T se repite 1 veces." + 
 					"\nEl caracter a se repite 4 veces." +
 					"\nEl caracter r se repite 2 veces." +
@@ -265,7 +278,9 @@ class InicioAppTest {
 		}
 		
 		@Test
-		void testTextoNumeroPalabras3() {	
+		void testTextoNumeroPalabras3() {
+			p3.setListaCaracteres(c3.getListaCaracteres());
+			String textoListaCaracteres3 = p3.textoTodosCaracteres(listaCaracteres3);
 			String texto = "\nEl caracter E se repite 1 veces." + 
 					"\nEl caracter l se repite 5 veces." +
 					"\nEl caracter a se repite 8 veces." +
@@ -290,7 +305,9 @@ class InicioAppTest {
 		}
 		
 		@Test
-		void testTextoNumeroPalabras4() {	
+		void testTextoNumeroPalabras4() {
+			p4.setListaCaracteres(c4.getListaCaracteres());
+			String textoListaCaracteres4 = p4.textoTodosCaracteres(listaCaracteres4);
 			String texto = "\nEl caracter A se repite 2 veces." + 
 					"\nEl caracter a se repite 2 veces." +
 					"\nEl caracter B se repite 1 veces." +
