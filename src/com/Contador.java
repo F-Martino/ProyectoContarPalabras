@@ -25,6 +25,11 @@ public class Contador {
 		return this.palabras.length;
 	}
 	
+	/**
+	 * Método que recibe un texto y devuelve cuantos caracteres tiene.
+	 * @param cadena String Texto introducido.
+	 * @return	numeroCaracteres int Numero de caracteres en el texto.
+	 */
 	public int contarCaracteresTotal(String cadena) {
 		int contadorCaracteres = 0;
 		
