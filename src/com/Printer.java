@@ -3,6 +3,11 @@ package com;
 import java.util.ArrayList;
 import java.util.Map;
 
+/**
+ * Clase que, recibiendo los datos calculados, devuelve los textos que se van a imprimir.
+ * @author Fernando Martino
+ *
+ */
 public class Printer {
 	private ArrayList<Character> listaCaracteres = new ArrayList<Character>();
 
