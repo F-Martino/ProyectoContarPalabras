@@ -13,7 +13,7 @@ public class Printer {
 
 	/**
 	 * Método que recibe la lista de caracteres para almacenarlo.
-	 * @param listaCaracteres ArrayList<Character> Lista de Caracteres.
+	 * @param listaCaracteres ArrayList Lista de Caracteres.
 	 */
 	public void setListaCaracteres(ArrayList<Character> listaCaracteres) {
 		this.listaCaracteres = listaCaracteres;
@@ -40,7 +40,7 @@ public class Printer {
 	/**
 	 * Método que recibe la lista de caracteres y cuantas veces se repiten
 	 * para escribir los datos en texto.
-	 * @param total Map<Character, Integer> Lista de caracteres y cuantas veces se repiten.
+	 * @param total Map Lista de caracteres y cuantas veces se repiten.
 	 * @return textoTodosCaracteres String Texto final.
 	 */
 	public String textoTodosCaracteres (Map<Character, Integer> total) {

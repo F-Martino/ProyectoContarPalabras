@@ -43,7 +43,7 @@ public class Contador {
 	/**
 	 * Método que recibe un texto y devuelve cuantas veces se repite cada caracter del texto.
 	 * @param cadena String Texto introducido.
-	 * @return caracteres Map<Character, Integer> Lista con los caracteres y veces que se repiten.
+	 * @return caracteres Map Lista con los caracteres y veces que se repiten.
 	 */
 	public Map<Character, Integer> contarTodosCaracteres(String cadena) {
 		Map<Character, Integer> listaCaracteresRepetidos = new HashMap<>();
@@ -63,7 +63,7 @@ public class Contador {
 	
 	/**
 	 * Método que devuelve una lista con los diferentes caracteres.
-	 * @return listaCaracteres ArrayList<Character> Lista con los diferentes caracteres.
+	 * @return listaCaracteres ArrayList Lista con los diferentes caracteres.
 	 */
 	public ArrayList<Character> getListaCaracteres(){
 		return listaCaracteres;
