@@ -61,7 +61,10 @@ public class Contador {
 		return listaCaracteresRepetidos;
 	}
 	
-	
+	/**
+	 * Método que devuelve una lista con los diferentes caracteres.
+	 * @return listaCaracteres ArrayList<Character> Lista con los diferentes caracteres.
+	 */
 	public ArrayList<Character> getListaCaracteres(){
 		return listaCaracteres;
 	}
