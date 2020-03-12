@@ -37,6 +37,12 @@ public class Printer {
 		return "En total hay " + total + " palabras.";
 	}
 	
+	/**
+	 * Método que recibe la lista de caracteres y cuantas veces se repiten
+	 * para escribir los datos en texto.
+	 * @param total Map<Character, Integer> Lista de caracteres y cuantas veces se repiten.
+	 * @return textoTodosCaracteres String Texto final.
+	 */
 	public String textoTodosCaracteres (Map<Character, Integer> total) {
 		String textoDevuelto = "";
 		for(int i = 0; i < this.listaCaracteres.size(); i++) 
