@@ -14,6 +14,11 @@ public class Contador {
 	private String [] palabras;
 	private ArrayList<Character> listaCaracteres = new ArrayList<Character>();
 
+	/**
+	 * Método que recibe un texto y devuelve cuantas palabras tiene.
+	 * @param cadena String Texto introducido.
+	 * @return	numeroPalabras int Numero de palabras en el texto.
+	 */
 	public int contarNumeroPalabras(String cadena) {
 		this.palabras = cadena.split(" ");
 		
