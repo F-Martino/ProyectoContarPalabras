@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Clase que recibiendo los datos introducidos por el usuario devuelve la cantidad de palabras,
+ * cantidad de caracteres y cuantas veces se repite cada caracter.
+ * @author Fernando Martino
+ *
+ */
 public class Contador {
 	private String [] palabras;
 	private ArrayList<Character> listaCaracteres = new ArrayList<Character>();
