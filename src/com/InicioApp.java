@@ -2,6 +2,12 @@ package com;
 import java.util.Map;
 import java.util.Scanner;
 
+/**
+ * Clase principal. Pide los datos al usuario, llama a las otras clases usando esos datos
+ * e imprime los resultados.
+ * @author Fernando Martino
+ *
+ */
 public class InicioApp {
 	
 	public static void main(String[] args) {
