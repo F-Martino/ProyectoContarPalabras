@@ -19,10 +19,15 @@ public class Printer {
 		this.listaCaracteres = listaCaracteres;
 	}
 
-	
+	/**
+	 * Método que recibe el número total de caracteres para escribir los datos en texto.
+	 * @param total int Número de caracteres.
+	 * @return textoCaracteresTotal String Texto final.
+	 */
 	public String textoCaracteresTotal (int total) {
 		return "En total (sin contar espacios en blanco) hay " + total + " caracteres.";
 	}
+	
 	
 	public String textoNumeroPalabras (int total) {
 		return "En total hay " + total + " palabras.";
