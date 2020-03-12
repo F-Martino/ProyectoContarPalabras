@@ -28,7 +28,11 @@ public class Printer {
 		return "En total (sin contar espacios en blanco) hay " + total + " caracteres.";
 	}
 	
-	
+	/**
+	 * Método que recibe el número total de palabras para escribir los datos en texto.
+	 * @param total int Número de palabras.
+	 * @return  textoNumeroPalabras String Texto final.
+	 */
 	public String textoNumeroPalabras (int total) {
 		return "En total hay " + total + " palabras.";
 	}
