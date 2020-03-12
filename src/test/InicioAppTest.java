@@ -9,6 +9,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Clase principal de tests, crea los objetos y contiene todos los tests.
+ * @author Fernando Martino
+ *
+ */
 class InicioAppTest {
 	
 	Contador c1 = new Contador();
