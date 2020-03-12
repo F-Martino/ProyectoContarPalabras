@@ -11,10 +11,15 @@ import java.util.Map;
 public class Printer {
 	private ArrayList<Character> listaCaracteres = new ArrayList<Character>();
 
+	/**
+	 * Método que recibe la lista de caracteres para almacenarlo.
+	 * @param listaCaracteres ArrayList<Character> Lista de Caracteres.
+	 */
 	public void setListaCaracteres(ArrayList<Character> listaCaracteres) {
 		this.listaCaracteres = listaCaracteres;
 	}
 
+	
 	public String textoCaracteresTotal (int total) {
 		return "En total (sin contar espacios en blanco) hay " + total + " caracteres.";
 	}
